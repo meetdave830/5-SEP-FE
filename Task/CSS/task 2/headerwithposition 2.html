@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>headerwithposition 2</title>
+    <style>
+        header{
+            width: 100%;
+            height: 100vh;
+            background-image: url('m.jpg');
+            background-size: cover;
+            opacity: 0.8;
+            
+        }
+        .logo{
+            width: 15%;
+            height: 150px;
+            /* border: 1px solid red; */
+            float: left;
+        }
+        .logo img{
+            width: 100%;
+            height: 150px;
+        }
+        nav{
+            width: 85%;
+            height: 50px;
+            
+            
+        }
+        nav ul{
+            margin-left:20%;
+            
+        
+        }
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin-top: 5%;
+            
+        }
+        nav ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: capitalize;
+            padding: 10px;
+            background-color:yellowgreen;
+            border-radius: 10px;
+        }
+        
+      
+        div.button{
+            width: 84%;
+            height: 49px;
+          
+            
+            margin-left: 90%;
+
+        }
+        div.button input{
+            background-color: yellowgreen;
+            border-radius: 10px;
+            padding: 5px;
+        }
+       
+        .text{
+            position: absolute;
+            height: 100px;
+            /* border: red 1px solid; */
+            top: 50%;
+            left:35%;
+            text-align: center;
+            color: yellow;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        .text p{
+            font-size: 15px;
+
+        }
+        .text a{
+            border: 1px solid black;
+            border-radius: 10px;
+            font-size: 10px;
+            padding: 15px;
+            background-color: yellowgreen;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo2.png">
+        </div>
+        <nav>
+             <ul>
+             
+                <li><a href="">home</a></li>
+                <li><a href="">contact-us</a></li>
+                <li><a href="">address</a></li>
+                <li><a href="">about-us</a></li>
+             </ul>
+        
+        </nav>
+        <div class="button">
+            <input  type="submit" value="Login">
+            <input  type="submit" value="Signin">
+        </div>
+        <div class="text">
+            <h1>welcome to our wed page</h1>
+            <p>click here to best travel experiences</p>
+            <a href=""> click here</a>
+        </div>
+    </header>
+</body>
+</html>

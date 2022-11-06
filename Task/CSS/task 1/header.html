@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <style>
+    header{
+        width: 100%;
+        height: 100px;
+        border: 1px solid black;
+        background-color: darkblue;
+}
+.logo{
+    width: 15%;
+    height: 100px;
+    /*border: 1px solid black;*/
+    float: left;
+    opacity: 0.7;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    /* float: left; */
+    width: 85%;
+    height: 100px;
+    /*border: 1px solid black;*/
+}
+nav ul{
+    /* float: right; */
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    background: rgb(93, 55, 10);
+    border-radius: 10PX;
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 10PX;
+}
+a{
+    color: rgb(255, 0, 179);
+}
+.button{
+    float: right;
+    margin-top: 40px;
+    margin-right: 100px; 
+    
+}
+button{
+    color: red;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 15px;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="LOGO.jpg" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">content us</a></li>
+            </ul>
+            
+            <div class="button"><input type="search">
+            <button>search</button></div>
+        </nav>
+    </header>
+</body>
+</html>

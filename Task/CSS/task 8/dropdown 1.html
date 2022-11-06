@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header 1</title>
+    <style>
+        header{
+            width: 100%;
+            height: 100px;
+            border: 1px solid black;
+            box-shadow: 5px 5px 5px 5px;
+            background:gray;
+
+        }
+        .logo{
+            width: 15%;
+            height: 100px;
+            /* border: 1px solid red; */
+            float: left;
+            /* opacity: 0.6; */
+        
+            
+        }
+        .logo img{
+            width: 100%;
+            height: 100px;
+            border-radius: 10px;
+
+        }
+        nav{
+            width: 65%;
+            height: 100px;
+            float: left;
+ 
+        }
+       
+      
+        .search{
+            float: right;
+            width:20%;
+            height: 100px;
+            margin-top: 40px;
+            font-size: 20px;
+            color: blue;
+        
+        }
+      
+        
+        .dropdown{
+            width: 100px;
+            border: 1px solid black;
+            text-align: center;	
+            margin-left: 10%;
+            display:block;
+           position: absolute;
+           left: 60%;
+           top: 30px;
+    
+        }
+        .dropdown button{
+            width: 100%;
+            padding: 5px;
+          
+            
+        }
+        .sub a{
+            text-decoration: none;
+            padding: 5px;
+            display:none;
+            color: black;
+        }
+        .dropdown:hover a{
+            display: block;
+        }
+
+        .dropdown1{
+            width: 100px;
+            border: 1px solid black;
+            text-align: center;	
+            margin-left: 10%;
+            display:block;
+            position: absolute;
+           left: 50%;
+           top: 30px;
+
+    
+        }
+        .dropdown1 button{
+            width: 100%;
+            padding: 5px;
+       
+          
+            
+        }
+        .sub1 a{
+            text-decoration: none;
+            padding: 5px;
+            display:none;
+            color: black;
+        }
+        .dropdown1:hover a{
+            display: block;
+        }
+        .dropdown2{
+            width: 100px;
+            border: 1px solid black;
+            text-align: center;	
+            margin-left: 10%;
+            display:block;
+            position: absolute;
+           left: 40%;
+           top: 30px;
+          
+
+    
+        }
+        .dropdown2 button{
+            width: 100%;
+            padding: 5px;
+       
+          
+       
+          
+            
+        }
+        .sub2 a{
+            text-decoration: none;
+            padding: 5px;
+            display:none;
+            color: black;
+          
+        }
+        .dropdown2:hover a{
+            display: block;
+        
+        }
+      
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="back.jpg" alt="">
+        </div>
+       
+        <nav>
+<div class="dropdown">
+                <button>car company</button>
+            <div class="sub"> 
+            
+                <a href="">Tata Motors</a>
+                <a href="">Honda</a>
+                <a href="">Jaguar </a>
+                <a href="">Tesla</a>
+             
+            </div>
+
+</div>
+<div class="dropdown1">
+                <button>city</button>
+            <div class="sub1"> 
+
+                <a href="">Rajkot</a>
+                <a href="">Vadodara</a>
+                <a href="">Surat</a>
+                <a href="">Ahmedabad</a>
+            
+            </div>
+
+</div>
+
+<div class="dropdown2">
+    <button>food</button>
+<div class="sub2"> 
+
+    <a href="">Salad</a>
+    <a href="">Sandwich</a>
+    <a href="">Bread</a>
+    <a href="">Fish</a>
+
+</div>
+
+</div>
+   
+          
+            
+        </nav>
+        <div class="search">
+            <input type="search">
+            <button>search</button>
+        </div>
+    
+           
+    
+       
+    </header>
+  
+    
+</body>
+</html>
