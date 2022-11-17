@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div.a{
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            border-radius: 100px;
+            position: relative;
+            top: 30%;
+            left:50%;
+            border-bottom:5px solid blue;  
+            animation-name: abc;
+            animation-duration: 1s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;  
+        }
+
+        div.a::before{
+            content: '';
+            height: 10px;
+            width: 10px;
+            background: blue;
+            border-radius: 50%;
+            box-shadow: 0 0 0 5px #B4161B, 0  0  0  10px #B4861B;
+            position: absolute;
+            display: block;
+            transition: 2s;
+            top:160px;
+            left:10px;
+        }
+
+        div.b{
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            border-radius: 100px;
+            position: relative;
+            top: 20%;
+            left: 45%;
+            border-bottom:5px solid red;  
+            animation-name: ab;
+            animation-duration: 2s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+            
+        }
+        
+        div.b::before{
+            content: '';
+            height: 10px;
+            width: 10px;
+            background: blue;
+            border-radius: 50%;
+            box-shadow: 0 0 0 5px #B4161B, 0  0  0  10px #B4861B;
+            position: absolute;
+            display: block;
+            transition: 2s;
+            top:170px;
+            left: 170px;
+        }
+        div.c{
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            border-radius: 100px;
+            position: absolute;
+            top: 30%;
+            left:30%;
+            border-bottom:5px solid yellow;  
+            animation-name: a;
+            animation-duration: 1s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;  
+        }
+        div.c::before{
+            content: '';
+            height: 10px;
+            width: 10px;
+            background: orchid;
+            border-radius: 50%;
+            box-shadow: 0 0 0 5px #16b43d, 0  0  0  10px #1bb41b;
+            position: absolute;
+            display: block;
+            transition: 2s;
+            top:160px;
+            left: 10px;
+        }
+    
+
+        div.d{
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            border-radius: 100px;
+            position: absolute;
+            top: 15%;
+            left: 40%;
+            border-bottom:5px solid green;  
+            animation-name: a1;
+            animation-duration: 1s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+            
+        }
+        div.d::before{
+            content: '';
+            height: 10px;
+            width: 10px;
+            background: lawngreen;
+            border-radius: 50%;
+            box-shadow: 0 0 0 5px #b4b116, 0  0  0  10px #b4ac1b;
+            position: absolute;
+            display: block;
+            transition: 2s;
+            top:170px;
+            left: 170px;
+        }
+
+@keyframes abc{
+100%{
+    transform: rotate(360deg);
+}
+}
+@keyframes ab{
+100%{
+    transform: rotate(360deg);
+}
+}
+@keyframes a{
+100%{
+    transform: rotate(360deg);
+}
+}
+@keyframes a1{
+100%{
+    transform: rotate(360deg);
+}
+}
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+   <div class="b"></div>
+   <div class="c"></div>
+   <div class="d"></div>
+</body>
+</html>

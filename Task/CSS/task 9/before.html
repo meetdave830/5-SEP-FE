@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before</title>
+    <style>
+        header{
+            width: 100%;
+            height: 100px;
+            border: 1px solid black;
+        }
+        .logo{
+            width: 15%;
+            height: 100px;
+            float: left;
+        }
+        .logo img{
+            width: 100%;
+            height: 100px;
+        }
+        nav{
+            width: 84%;
+            height: 100px;
+            float: right;
+        }
+        nav ul{
+            float: right;
+        }
+        nav ul li{
+            list-style: none;
+            background-color: greenyellow;
+            padding: 4px;
+            display: inline-block;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+        header::before{
+            content: '';
+            height: 5px;
+            width: 0px;
+            display: block;
+            background-color: black;
+            /* top:0px; */
+            /* left: 0px; */
+            transition: 2s;
+        }
+
+        header:hover::before{
+            width:100%;
+        }
+    
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo2.png" alt=""></div>
+        <nav>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about-us</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">address</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

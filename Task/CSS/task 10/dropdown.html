@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav ul{
+            list-style:none;
+            
+        }
+        nav ul li{
+            float:left;
+            height: 50px;
+            width: 150px;
+            border: 1px solid black;
+            text-align: center;
+            line-height:50px;
+            font-size: 20px;
+            background-color: greenyellow;
+
+        }
+        nav ul li:hover{
+            background-color: blueviolet;
+            color: white;
+        }
+
+        nav ul ul{
+            display:none;
+        }
+        nav ul li:hover ul{
+            display: block;
+        } 
+        nav ul ul ol{
+            display: none;
+        }
+       nav ul li ul li:hover ol{
+        display: block;
+       }
+      
+        
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>course
+                      <ul>   
+                                 <li>html
+                                    <ol><li>a tag</li> 
+                                        <li>b tag</li>
+                                        <li>p tag</li>
+                                        <li>i tag</li>
+                                    </ol>
+                                </li>
+                                <li>css</li>
+                                <li>java script</li>
+                      </ul>
+                </li>
+                <li>contact</li>
+                <li>about us</li>
+            
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
