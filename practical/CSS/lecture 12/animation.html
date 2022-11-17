@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin-top: 100px;
+            margin-left: 100px;
+            animation-name: abc;
+            animation-duration: 5s;
+            animation-duration:normal;
+            animation-iteration-count: infinite;
+        }
+        @keyframes abc{
+            0%{ 
+                transform: rotate(0deg);
+                background-color: red;
+
+            }
+            25%{
+                transform: rotate(90deg);
+                background-color: blue;
+            }
+            50%{
+                transform: rotate(180deg);
+                background-color: aqua;
+            }
+            75%{
+                transform: rotate(270deg);
+                background-color: brown;
+            }
+            100%{
+                transform: rotate(369deg);
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
