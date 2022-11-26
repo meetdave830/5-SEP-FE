@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav ul{
+            list-style: none;
+        }
+        nav ul li{
+            border: 1px solid black;
+            width: 150px;
+            height:50px;
+            text-align: center;
+            line-height: 50px;
+            background-color:navy;
+            font-size: 25px;
+            float: left;
+        }
+        nav ul li:hover{
+            background-color: aliceblue;
+            color: greenyellow;
+        }
+        nav ul ul{
+            display: none;
+        }
+        nav ul li:hover ul {
+			display: block;
+		}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>Courses
+                <ul>    <li>HTML</li>
+                         <li>CSS</li>
+                         <li>Java-Script</li>   
+                </ul>
+            </li>
+            <li>contact us</li>
+            <li>about us</li>
+        </ul>
+    </nav>
+</body>
+</html>
