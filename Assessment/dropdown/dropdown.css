@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.menu-bar{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.logo{
+    color: green;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.logo span{
+    color: red;
+}
+.menu-bar dl{
+    list-style: none;
+    display: flex;
+
+}
+.menu-bar dl dt {
+    padding: 10px 30px;
+    position: relative;
+}
+.menu-bar dl dt a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu-bar dl dt a:hover{
+    color: red;
+}
+.dropdown-menu{
+    display: none;
+}
+.menu-bar dl dt:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:black;
+}
+.menu-bar dl dt:hover .dropdown-menu dl{
+    display: block;
+    margin: 10px;
+}
+.menu-bar dl dt:hover .dropdown-menu dl dt{
+    width: 150px;
+    padding: 10px;
+}
+.fas{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+.dropdown-menu-1{
+    display: none;
+}
+.dropdown-menu dl dt:hover .dropdown-menu-1{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: black;
+}
+button{
+    height: 40px;
+    width: 70px;
+    background-color: blue;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: red;
+}
