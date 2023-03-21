@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../image/login-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: #ecf5fb;
+}
+.login{
+    width: 35%;
+    height: auto;
+    background-color: #ecf5fb;
+    border: 2px solid #4c92be;
+}
